@@ -1,0 +1,34 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "node": true,
+    "jasmine": true,
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "rules": {
+    "semi": "warn",
+    "no-multiple-empty-lines": "warn",
+    "camelcase": "error",
+    "prefer-spread": "warn",
+    "no-undef-init": "error",
+    "no-undef": "error",
+    "no-unreachable": "error",
+    "no-extra-semi": "warn",
+    "comma-style": "warn",
+    "comma-dangle": "warn",
+    "no-unused-vars": "warn",
+    "quotes": "warn",
+    "no-console": "off"
+  }
+}

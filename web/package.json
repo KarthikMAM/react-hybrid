@@ -6,9 +6,9 @@
     "react-scripts": "0.9.3"
   },
   "dependencies": {
-    "state": "file:../state/",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "state": "file:../state/"
   },
   "scripts": {
     "start": "react-scripts start",

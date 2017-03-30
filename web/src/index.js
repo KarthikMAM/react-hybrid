@@ -1,24 +1,28 @@
-import { actions, store } from 'state';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { actions, store } from "state";
+import React from "react";
+import ReactDOM from "react-dom";
 
 class HelloWorld extends React.Component {
-    onClickHandler(e) {
-        store.dispatch(actions.toggleHello());
-    }
+  static propTypes = {
+    hello: React.PropTypes.string
+  }
 
-    render() {
-        return <h1 onClick={this.onClickHandler.bind(this)}> {this.props.hello} World!! </h1>;
-    }
+  onClickHandler(e) {
+    store.dispatch(actions.toggleHello());
+  }
+
+  render() {
+    return <h1 onClick={this.onClickHandler.bind(this)}> {this.props.hello} World!! </h1>;
+  }
 }
 
 console.log(store);
 
 function renderer() {
-    ReactDOM.render(
-        <HelloWorld store={store} hello={store.getState()} />,
-        document.getElementById('root')
-    )
+  ReactDOM.render(
+    <HelloWorld store={store} hello={store.getState()} />,
+    document.getElementById("root")
+  );
 }
 
 renderer();

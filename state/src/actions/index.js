@@ -1,5 +1,5 @@
 export function toggleHello() {
-    return {
-        type: "TOGGLE"
-    }
+  return {
+    type: "TOGGLE"
+  };
 }
