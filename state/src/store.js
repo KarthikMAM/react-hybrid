@@ -1,4 +1,4 @@
 import { createStore } from "redux";
 import { helloWorld } from "./reducers";
 
-export const store = createStore(helloWorld);
+export const store = (initialState = "") => createStore(helloWorld, initialState);

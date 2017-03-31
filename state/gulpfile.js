@@ -32,3 +32,5 @@ gulp.task("build:watch", ["build:clean"], function () {
     .watch("src/**/*.js", ["build"]);
 });
 
+gulp.task("default", ["build:clean"]);
+

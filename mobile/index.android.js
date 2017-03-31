@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { store, actions } from "state";
+import { store as createStore, actions } from "state";
 import { connect, Provider } from "react-redux";
 import {
   AppRegistry,
@@ -7,6 +7,8 @@ import {
   Text,
   View
 } from "react-native";
+
+let store = createStore("Hello");
 
 class HelloWorld extends Component {
   constructor(props) {
