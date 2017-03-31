@@ -16,6 +16,14 @@ yarn global add create-react-app
 yarn install && yarn start
 ```
 
+<h3> SERVER </h3>
+
+```
+cd web/
+yarn global add create-react-app
+yarn install && yarn server
+```
+
 <h3>NATIVE</h3>
 
 ```
